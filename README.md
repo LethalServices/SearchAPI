@@ -19,12 +19,15 @@
 ## Information:
 This API was made to parse data from fmovies & 9anime fast and safely, this also includes mirror checkers. 
 
+### Image:
+![image](https://github.com/LethalServices/SearchAPI/assets/73680704/fae6733e-57cd-416d-9f05-8b15389484d5)
+
 ### Usage:
 ```python
 python3 Manager.py
 ```
 
-### TODO:
+## TODO:
 - Host Check
 - Grab Direct Link
 
