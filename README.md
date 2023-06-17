@@ -34,9 +34,9 @@ python3 Manager.py
 • flask
 ```
 
+## Developers:
+Python - 3.10.8 
+
 ## TODO:
 - Host Check
 - Grab Direct Link
-
-## Developers:
-Python - 3.10.8 
