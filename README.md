@@ -10,7 +10,7 @@
   <p align="center">
     Our Discord Community!
     <br />
-    <a href="https://discord.gg/lethals"><strong>Explore the Dscord »</strong></a>
+    <a href="https://discord.gg/lethals"><strong>Explore the Discord »</strong></a>
     <br />
     <br />
   </p>
