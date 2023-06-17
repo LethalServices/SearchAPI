@@ -27,9 +27,16 @@ This API was made to parse data from fmovies & 9anime fast and safely, this also
 python3 Manager.py
 ```
 
+### Requirements(Fuck That Node Shit):
+```
+• BeautifulSoup
+• waitress
+• flask
+```
+
 ## TODO:
 - Host Check
 - Grab Direct Link
 
 ## Developers:
-Python | 3.10.8 
+Python - 3.10.8 
