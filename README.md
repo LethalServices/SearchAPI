@@ -24,5 +24,9 @@ This API was made to parse data from fmovies & 9anime fast and safely, this also
 python3 Manager.py
 ```
 
+### TODO:
+- Host Check
+- Grab Direct Link
+
 ## Developers:
 Python | 3.10.8 
