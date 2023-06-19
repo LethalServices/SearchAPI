@@ -38,6 +38,7 @@ python3 Manager.py
 • BeautifulSoup
 • waitress
 • flask
+• colorama 
 ```
 
 ## TODO:
