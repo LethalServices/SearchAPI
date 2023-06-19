@@ -44,6 +44,9 @@ python3 Manager.py
 - Host Check
 - Grab Direct Link
 
-Helpers:
-9Anime - [Here](https://github.com/UrFingPoor/9Anime-Checker)
-FMovies - [Here](https://github.com/UrFingPoor/FmoviesChecker)
+## Helpers:
+- 9Anime - [Here](https://github.com/UrFingPoor/9Anime-Checker)
+- FMovies - [Here](https://github.com/UrFingPoor/FmoviesChecker)
+
+## LICENSE:
+https://github.com/LethalServices/SearchAPI/LICENSE
