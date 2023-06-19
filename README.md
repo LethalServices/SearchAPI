@@ -49,4 +49,4 @@ python3 Manager.py
 - FMovies - [Here](https://github.com/UrFingPoor/FmoviesChecker)
 
 ## LICENSE:
-[Here](https://github.com/LethalServices/SearchAPI/LICENSE)
+[General Public License V3](https://github.com/LethalServices/SearchAPI/LICENSE)
