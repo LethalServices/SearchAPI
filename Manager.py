@@ -12,6 +12,7 @@ from sys import platform
 TODO: 
 • Make Host Check
 • Grab Direct Link
+• Add More Site Support
 '''
 
 app = Flask(__name__)
