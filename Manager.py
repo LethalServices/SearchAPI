@@ -59,6 +59,9 @@ def logs(port):
     print(f'\n9Anime:')
     print(f'-• [{Fore.GREEN}DOC{Fore.WHITE}] {Fore.LIGHTYELLOW_EX}Simple Search{Fore.WHITE}: http://127.0.0.1:{port}/api/9anime?search=ANIME')
     print(f'-• [{Fore.GREEN}DOC{Fore.WHITE}] {Fore.LIGHTYELLOW_EX}Advanced Search{Fore.WHITE}: http://127.0.0.1:{port}/api/9anime?search=ANIME&page=1')
+    print(f'\nAniHDPlay:')
+    print(f'-• [{Fore.GREEN}DOC{Fore.WHITE}] {Fore.LIGHTYELLOW_EX}Simple Search{Fore.WHITE}: http://127.0.0.1:{port}/api/anihd?search=ANIME')
+    print(f'-• [{Fore.GREEN}DOC{Fore.WHITE}] {Fore.LIGHTYELLOW_EX}Advanced Search{Fore.WHITE}: http://127.0.0.1:{port}/api/anihd?search=ANIME&page=1')
 
 def getRandomPort():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -87,6 +90,13 @@ def anime():
         proxy = request.args.get('proxy')
         return jsonify(getAnime('9anime.to', keyword, page, proxy))
 
+@app.route('/api/anihd', methods=['GET'])
+def anihd():
+    if request.method == 'GET':
+        keyword = request.args.get('search')
+        page = request.args.get('page')
+        proxy = request.args.get('proxy')
+        return jsonify(getAnihdPlay('anihdplay.com', keyword, page, proxy))
 
 if __name__ == '__main__':
     logo()
