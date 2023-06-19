@@ -9,8 +9,9 @@ from time import sleep
 from sys import platform
 
 '''
-TODO: Make Host Check
-hosts = ['fmovies.to','fmovies.wtf','fmovies.taxi','fmovies.pub','fmovies.cafe','fmovies.world']
+TODO: 
+• Make Host Check
+• Grab Direct Link
 '''
 
 app = Flask(__name__)
@@ -92,5 +93,4 @@ if __name__ == '__main__':
     logs(port)
     app.secret_key = ''.join(random.choices(string.ascii_uppercase + string.digits, k=32)).encode('utf-8')                            
     CORS(app)
-    app.debug = True
     serve(app, host="0.0.0.0", port=port)
