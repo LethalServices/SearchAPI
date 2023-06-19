@@ -20,7 +20,7 @@
 This API was made to parse data from fmovies & 9anime fast and safely, this also includes mirror checkers. 
 
 ### Image:
-![image](https://github.com/LethalServices/SearchAPI/assets/73680704/fae6733e-57cd-416d-9f05-8b15389484d5)
+![image](https://i.gyazo.com/dc7e31a662231f4cfe21f54cbc667a03.png)
 
 ### Usage:
 ```python
