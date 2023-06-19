@@ -22,6 +22,9 @@ This API was made to parse data from fmovies & 9anime fast and safely, this also
 ### Image:
 ![image](https://i.gyazo.com/dc7e31a662231f4cfe21f54cbc667a03.png)
 
+### Preview:
+https://github.com/LethalServices/SearchAPI/assets/73680704/29293f53-57a0-40e4-b2dd-46c5ada4be50
+
 ### Usage:
 ```python
 python3 Manager.py
@@ -40,3 +43,7 @@ python3 Manager.py
 ## TODO:
 - Host Check
 - Grab Direct Link
+
+Helpers:
+9Anime - [Here](https://github.com/UrFingPoor/9Anime-Checker)
+FMovies - [Here](https://github.com/UrFingPoor/FmoviesChecker)
