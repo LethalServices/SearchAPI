@@ -21,7 +21,7 @@ def getDevice():
     match platform:
         case "win32":
             os.system('cls')
-        case default:
+        case _:
             os.system('clear')
             
 def logo():
