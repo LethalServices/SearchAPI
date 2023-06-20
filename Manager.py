@@ -19,15 +19,11 @@ app = Flask(__name__)
 
 def getDevice():
     match platform:
-        case "linux":
-            os.system('clear')
-        case "linux2": 
-            os.system('clear')
-        case "darwin":
-           os.system('clear')
         case "win32":
             os.system('cls')
-
+        case default:
+            os.system('clear')
+            
 def logo():
     getDevice()
     width = os.get_terminal_size().columns
