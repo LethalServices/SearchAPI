@@ -47,7 +47,7 @@ def getMovies(host, query, page, proxie):
             year =  movieinfo[2]
             ctype = movieinfo[3].replace('SS', 'TV SHOW')
             duration =  f'{movieinfo[4]} {movieinfo[5]}'
-            title =  f'{movieinfo[7]} {movieinfo[8]}'
+            title =  ' '.join(movieinfo[7:])
         except Exception as e:
             link = str(e) 
             quality = str(e)
