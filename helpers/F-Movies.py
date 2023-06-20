@@ -20,10 +20,16 @@ class fmovies(HTMLParser):
         if self.capture:              
             self.data.append(data)
 
+def getDevice():
+    match platform:
+        case "win32":
+            os.system('cls')
+        case _:
+            os.system('clear')
+
 def logo():
     width = os.get_terminal_size().columns
-    os.system('cls')
-    os.system('title Lethal Services!')
+    getDevice()
     print(Fore.LIGHTMAGENTA_EX+'                                                           '.center(width))
     print(Fore.LIGHTMAGENTA_EX+'     ██╗     ███████╗████████╗██╗  ██╗ █████╗ ██╗          '.center(width))
     print(Fore.LIGHTMAGENTA_EX+'     ██║     ██╔════╝╚══██╔══╝██║  ██║██╔══██╗██║          '.center(width))
