@@ -1,6 +1,7 @@
 import os, socket, random, string
 from api.fmovies import getMovies
 from api.anime import getAnime
+from api.anix import getAnix
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from colorama import Fore
@@ -93,6 +94,14 @@ def anihd():
         page = request.args.get('page')
         proxy = request.args.get('proxy')
         return jsonify(getAnihdPlay('anihdplay.com', keyword, page, proxy))
+
+@app.route('/api/anix', methods=['GET'])
+def anix():
+    if request.method == "GET":
+        keyword = request.args.get('search')
+        page = request.args.get('page')
+        proxy = request.args.get('proxy')
+        return  jsonify(getAnix(keyword, page, proxy))
 
 if __name__ == '__main__':
     logo()
