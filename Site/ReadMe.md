@@ -5,4 +5,13 @@
 
   # Credits:
   - The CSS comes from w3schools / github
-    
+ 
+  ## Image:
+  ![image](https://github.com/LethalServices/SearchAPI/assets/73680704/910b6235-f9b4-4b09-a38a-68ea8f9ddf43)
+
+  ## Demo:
+  - [Here](https://lethals.org/watch/movies/)
+
+
+## LICENSE:
+[GNU General Public License v3.0](https://github.com/LethalServices/SearchAPI/blob/main/LICENSE)
