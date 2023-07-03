@@ -59,6 +59,9 @@ def logs(port):
     print(f'\nAniHDPlay:')
     print(f'-• [{Fore.GREEN}DOC{Fore.WHITE}] {Fore.LIGHTYELLOW_EX}Simple Search{Fore.WHITE}: http://127.0.0.1:{port}/api/anihd?search=ANIME')
     print(f'-• [{Fore.GREEN}DOC{Fore.WHITE}] {Fore.LIGHTYELLOW_EX}Advanced Search{Fore.WHITE}: http://127.0.0.1:{port}/api/anihd?search=ANIME&page=1')
+    print(f'\nAnix:')
+    print(f'-• [{Fore.GREEN}DOC{Fore.WHITE}] {Fore.LIGHTYELLOW_EX}Simple Search{Fore.WHITE}: http://127.0.0.1:{port}/api/anix?search=ANIME')
+    print(f'-• [{Fore.GREEN}DOC{Fore.WHITE}] {Fore.LIGHTYELLOW_EX}Advanced Search{Fore.WHITE}: http://127.0.0.1:{port}/api/anix?search=ANIME&page=1')
 
 def getRandomPort():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
