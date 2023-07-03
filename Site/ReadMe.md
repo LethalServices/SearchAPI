@@ -3,6 +3,6 @@
 - This was made to be as simple and basic as it could be, it just the start / base to the site ill be making over time.
 
 
-  #Credits:
+  # Credits:
   - The CSS comes from w3schools / github
     
