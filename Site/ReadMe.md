@@ -28,7 +28,8 @@
   ![image](https://github.com/LethalServices/SearchAPI/assets/73680704/910b6235-f9b4-4b09-a38a-68ea8f9ddf43)
 
   ## Demo:
-  - [Here](https://lethals.org/watch/movies/)
+  - [Movies/TVShows](https://lethals.org/watch/movies/)
+  - [Anime](https://lethals.org/watch/anime/)
 
 
 ## LICENSE:
