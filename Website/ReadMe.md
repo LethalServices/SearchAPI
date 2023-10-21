@@ -23,8 +23,12 @@
   # Credits:
   - The CSS comes from w3schools / github
  
-  ## Image:
-  ![image](https://github.com/LethalServices/SearchAPI/assets/73680704/910b6235-f9b4-4b09-a38a-68ea8f9ddf43)
+  ## Desktop:
+  ![image](https://i.gyazo.com/f746911af7d6428d92686a14b2b9f983.png)
+  
+  ## Mobile(Non Landscape Mode):
+  ![image](https://i.gyazo.com/ea833bb09f01d988e82cf8842ce5dd3a.png)
+  
 
   ## Demo:
   - [Anime](https://lethals.org/watch/anime/)
