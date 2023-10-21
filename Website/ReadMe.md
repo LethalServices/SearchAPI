@@ -29,9 +29,5 @@
   ## Mobile(Non Landscape Mode):
   <div align="center"><img src="https://i.gyazo.com/ea833bb09f01d988e82cf8842ce5dd3a.png" alt="Logo" width="400" height="767"></div>
    
-  ## Demo:
-  - [Anime](https://lethals.org/watch/anime/)
-  - [Movies/TVShows](https://lethals.org/watch/movies/)
-
 ## LICENSE:
 [GNU General Public License v3.0](https://github.com/LethalServices/SearchAPI/blob/main/LICENSE)
