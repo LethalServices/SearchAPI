@@ -80,15 +80,7 @@ def fmovies():
         keyword = request.args.get('search')
         page = request.args.get('page')
         proxy = request.args.get('proxy')
-        return jsonify(getMovies('fmovies.wtf', keyword, page, proxy))
-    
-@app.route('/api/9anime', methods=['GET'])
-def anime():
-    if request.method == 'GET':
-        keyword = request.args.get('search')
-        page = request.args.get('page')
-        proxy = request.args.get('proxy')
-        return jsonify(getAnime('9anime.to', keyword, page, proxy))
+        return jsonify(getMovies('fmovies.ps', keyword, page, proxy))
 
 @app.route('/api/anihd', methods=['GET'])
 def anihd():
