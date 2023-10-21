@@ -1,0 +1,377 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'arial', sans-serif;
+  align-items: center;
+  color: #fff;
+}
+body {
+ background-color: #363535;
+}
+.s1 {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropbtn {
+  appearance: none;
+  background-color: #6643A5;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui,"Segoe UI", Helvetica,Arial,sans-serif, "Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #976ee2;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #6643A5;
+  min-width: 160px;
+  overflow: auto;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  right: 0;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #4e4c4c;}
+
+.show {display: block;}
+
+@media screen {
+ /* The scrollable part */
+  table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+ }
+  td, th {
+      text-align: left;
+      padding: 8px;
+ }
+  @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+      html {
+          transform: rotate(-90deg);
+          transform-origin: left top;
+          width: 100vh;
+          overflow-x: hidden;
+          position: absolute;
+          top: 100%;
+          left: 0;
+     }
+ }
+  tr:nth-child(even) {
+      background-color: #161616;
+ }
+  tr:nth-child(odd) {
+      background-color: #202020;
+ }
+  .scrollable {
+      height: 300px;
+      width: 750px;
+      overflow-y: auto;
+      border-bottom: 1px solid #363535;
+ }
+  th {
+      position: sticky;
+      background-color: #161616;
+      z-index: 2;
+      top: 0;
+ }
+}
+@media only screen and (max-width: 750px) and (min-width: 300px) {
+ /* The scrollable part */
+  table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: auto;
+ }
+ .pagelink{
+  position: relative; 
+  left: 200px; 
+  top: -155px
+ }
+  td, th {
+      text-align: center;
+      padding: 1px;
+ }
+  tr:nth-child(even) {
+      background-color: #161616;
+ }
+  tr:nth-child(odd) {
+      background-color: #202020;
+ }
+  .scrollable {
+    
+      height: 250px;
+      width: 350px;
+      position: relative;   
+    left: 8px; 
+    top: -195px;
+    overflow-y: auto;
+    border-bottom: 1px solid #363535;
+ }
+  th {
+      position: sticky;
+      background-color: #363535;
+      z-index: 1;
+      top: 0;
+ }
+}
+.search-btn {
+  appearance: none;
+  background-color: #6643A5;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.search-btn:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+.search-btn:hover {
+  background-color: #976ee2;
+}
+.search-btn:focus {
+  box-shadow: rgba(176, 11, 182, 0.4) 0 0 0 3px;
+  outline: none;
+}
+.search-btn:disabled {
+  background-color: #6643A5;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+.search-btn:active {
+  background-color: #6643A5;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+.pagelink li
+{
+    height: 25px;
+    width: 25px;
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+}
+.pagelink li:hover, .active
+{
+    color: #fff;
+    background-color: #6643A5;
+}
+.left-arrow
+{
+    color: #976ee2;
+}
+.right-arrow
+{
+    color: #976ee2;
+}
+.next-arrow
+{
+  color: #976ee2;
+}
+
+.watermark {
+  min-height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  background: url("https://cdn.discordapp.com/attachments/740695755542626386/1054162232398860308/Untitled_Artwork.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-color: #363535 ;
+  padding: 15px;
+}
+.settings {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: top;
+}
+.settingsDiv {
+  width: 50px;
+  height: 50px;
+  padding-top: 25px;
+  padding-right: 75px;
+}
+.settingsDiv a img {
+  width: 50px;
+  height: 50px;
+  opacity: 75%;
+  animation: 0.4s opacity100to075;
+}
+.settingsDiv a img:hover {
+  opacity: 100%;
+  animation: 0.4s opacity075to100;
+}
+@keyframes opacity075to100 {
+ from {
+     opacity: 75%;
+ }
+  to {
+     opacity: 100%;
+ }
+}
+@keyframes opacity100to075 {
+ from {
+     opacity: 100%;
+ }
+  to {
+     opacity: 75%;
+ }
+}
+.credits {
+  width: 100%;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  top: 95%;
+  position: fixed;
+}
+.credits div{
+  font-size: 12px;
+  opacity: 35%;
+}
+.credits div a {
+  text-decoration: none;
+}
+.credits div a:hover {
+  text-decoration: underline;
+}
+.watermark {
+  position: fixed;
+  min-height: 100%;
+  min-width: 100%;
+}
+section .main {
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 20%;
+  position: fixed;
+}
+section .main .searchBx {
+  position: relative;
+  width: 350px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.container {
+  width: auto;
+  height: auto;
+  overflow-y: true;
+}
+section .main .searchBx .query {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid transparent;
+  outline: none;
+  font-size: 20px;
+  border-bottom: 3px solid #6643A5;
+  background: none;
+  padding-left: 50px;
+  padding-right: 3px;
+  box-shadow: #ccc;
+}
+section .main .searchBx .icons {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 19px 20px;
+  align-items: center;
+  pointer-events: none;
+}
+section .main .searchBx .icons img {
+  max-width: 100%;
+}
+ul {
+  align-items: center;
+  display: flex;
+  list-style: none;
+  left: 1000px;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+@keyframes buttonHover {
+ from {
+     background-color: #ffffff60;
+ }
+  to {
+     background-color: #ffffff96;
+ }
+}
+@keyframes buttonUnHover {
+ from {
+     background-color: #ffffff96;
+ }
+  to {
+     background-color: #ffffff60;
+ }
+}

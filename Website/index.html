@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Lethal's Anime, Movies, TV Shows Search" />
+    <meta property="og:type" content="Lethal's Anime, Movies, TV Shows Search" />
+    <meta property="og:url" content="https://lethals.org" />
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/740695755542626386/1052688549788516402/Untitled_Artwork.png" />
+    <meta property="og:description" content="Find The Lastest Anime, Movies, TV Shows With Lethal's Search." />
+    <meta name="theme-color" content="#6643A5">
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/740695755542626386/1052688549788516402/Untitled_Artwork.png">
+    <title>Lethal's Search</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/67c2ba6bdb.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+
+    <script>
+     
+      </script>
+  </head>
+  <body>
+    <section class="watermark"></section>
+    <section class="s1">
+      <div class="main">
+
+        <div class="dropdown" style="position: relative; left: 162px; top: -140px">
+          <button class="dropbtn" onclick="Settings()"><i class="fa fa-cog"></i>  <i class="fa fa-caret-down"></i></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="https://cash.app/$0x187"><i class="fa-solid fa-dollar-sign"></i> Support Us!</a>
+            <a href="https://discord.gg/lethals"><i class="fab fa-discord"></i> Our Discord</a>
+          </div>
+        </div>
+
+        <center>
+          <img src="img/Movies.png" alt="" width="150" height="150" style="position: relative; left: 0px; top: -125px">
+          </a>
+        </center>
+        <div class="searchBx" alt="" width="150" height="150" style="position: relative; left: 0px; top: -145px">
+          <input type="text" name="" class="query" placeholder="Find Something To Watch?">
+          <div class="icons">
+            <div>
+              <img src="img/search.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <ul>
+            <div class="dropdown" style="position: relative; left: -25px; top: -165px">
+              <button class="dropbtn" onclick="advOptions()">Advanced Options <i class="fa fa-cog"></i>  <i class="fa fa-caret-down"></i></button>
+              <div id="myDropdown1" class="dropdown-content" style="text-align: left;">
+                <a onclick="ToggleType('fmovies')"><i class="fa fa-film"></i> Movies</a>
+                <a onclick="ToggleType('9anime')""><i class="fa fa-film"></i> Anime</a>
+                <a onclick="ToggleType('fshows')"><i class="fa fa-film"></i> TV Shows</a>
+              </div>
+            </div>
+            <button class="search-btn" role="button" style="position: relative; left: 25px; top: -165px" onclick="search()">
+              <i class="fa fa-search"></i> Search! </button>
+          </ul>
+          <br>
+          <ul class="pagelink text-center" style="position: relative; left: 0px; top: 135px">
+           <div id="pages">
+
+           </div>
+          </ul>
+          <div class="scrollable" style="position: relative; left: 0px; top: -195px">
+            <table>
+              <thead>
+                <tr></tr>
+              </thead>
+              <tbody id="swag"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section class="credits">
+        <div style="position: relative; left: -25px; top: 0px">
+          <h4>© 2022 - 2023 Lethal Services ™ ​| All rights reserved. <br>
+            <center> General Public License: <a href="https://github.com/LethalServices/SearchAPI" class="fa fa-github"></a> Discord: <a href="https://discord.gg/lethals" class="fab fa-discord"></a>
+            </center>
+          </h4>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
