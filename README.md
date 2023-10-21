@@ -17,7 +17,7 @@
 </div>
 
 ## Information:
-This API was made to parse data from fmovies & 9anime fast and safely, this also includes mirror checkers. 
+This API was made to parse data from any streaming site; fast and safely without ads.
 
 ### Image:
 ![image](https://i.gyazo.com/dc7e31a662231f4cfe21f54cbc667a03.png)
