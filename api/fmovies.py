@@ -1,32 +1,23 @@
 import requests
 from bs4 import BeautifulSoup
 from api.proxy import Random_Proxy
-from colorama import Fore
 
 def getMovies(host, query, page, proxie):
     moviesDictionary = {'Results': []}
     proxy = Random_Proxy()
     try:
+        base_url = f'https://{host}/search/{query}'
+
+        if page != None:
+            base_url = f'https://{host}/search/{query}?page={page}'
+
         if proxie == 'true':
-            if page != None:
-                base_url = f'https://{host}/search/{query}?page={page}'
-                currentPage = page
-                r = proxy.Proxy_Request(url=base_url, request_type='get')
-                soup = BeautifulSoup(r.content, 'lxml')
-            else:
-                base_url = f'https://{host}/search/{query}'
-                currentPage = '1'
-                r = proxy.Proxy_Request(url=base_url, request_type='get')
-                soup = BeautifulSoup(r.content, 'lxml')
+            currentPage = page or '1'
+            r = proxy.Proxy_Request(url=base_url, request_type='get')
+            soup = BeautifulSoup(r.content, 'lxml')
         else:
-            if page != None:
-                base_url = f'https://{host}/search/{query}?page={page}'
-                currentPage = page
-                soup = BeautifulSoup(requests.get(base_url).content, 'lxml')
-            else:
-                base_url = f'https://{host}/search/{query}'
-                currentPage = '1'
-                soup = BeautifulSoup(requests.get(base_url).content, 'lxml')
+            currentPage = page or '1'
+            soup = BeautifulSoup(requests.get(base_url).content, 'lxml')
             
     except requests.exceptions.RequestException as e:
         moviesDictionary['Status'] = False,
@@ -56,7 +47,7 @@ def getMovies(host, query, page, proxie):
         except Exception:
             pass 
        
-        moviesObject = {'Quality': quality, 'link': link, 'Cover': poster, 'Title': Title, 'Year': year, 'Duration': duration, 'Type': ctype}#,'Quality': quality, 'Duration': duration,'Cover': poster,'Year': year, 'Content-Type': ctype} #, 'Last_Page':last_page[1]}
+        moviesObject = {'Quality': quality, 'link': link, 'Cover': poster, 'Title': Title, 'Year': year, 'Duration': duration, 'Type': ctype}
         moviesDictionary['Last_Page'] = getPages(soup, query)
         moviesDictionary['Results'].append(moviesObject)
    
