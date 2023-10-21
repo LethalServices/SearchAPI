@@ -20,7 +20,7 @@ def getMovies(host, query, page, proxie):
                 soup = BeautifulSoup(r.content, 'lxml')
         else:
             if page != None:
-                base_url = f'https://{host}/search/{query}?	={page}'
+                base_url = f'https://{host}/search/{query}?page={page}'
                 currentPage = page
                 soup = BeautifulSoup(requests.get(base_url).content, 'lxml')
             else:
