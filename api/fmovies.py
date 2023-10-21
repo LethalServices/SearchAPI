@@ -53,7 +53,7 @@ def getMovies(host, query, page, proxie):
             duration = item.find('span', class_="fdi-item fdi-duration").text
             ctype = item.find('span', class_="float-right fdi-type").text
             
-        except Exception: #some results will not be shown as i havent fixed the parse issue
+        except Exception:
             pass 
        
         moviesObject = {'Quality': quality, 'link': link, 'Cover': poster, 'Title': Title, 'Year': year, 'Duration': duration, 'Type': ctype}#,'Quality': quality, 'Duration': duration,'Cover': poster,'Year': year, 'Content-Type': ctype} #, 'Last_Page':last_page[1]}
@@ -62,7 +62,7 @@ def getMovies(host, query, page, proxie):
    
     return moviesDictionary
 
-def getPages(soup, query): # this is for the new site which will be uploaded Soon
+def getPages(soup, query):
     try:
         ul = soup.find('ul', class_='pagination pagination-lg justify-content-center')
         li = ul.find_all('li')
