@@ -46,8 +46,8 @@ python3 Manager.py
 - Grab Direct Link
 
 ## Helpers:
-- 9Anime - [Here](https://github.com/UrFingPoor/9Anime-Checker)
-- FMovies - [Here](https://github.com/UrFingPoor/FmoviesChecker)
+- 9Anime - [Here](https://github.com/UrFingPoor/9Anime-Checker)  - No longer Works Will update soon 
+- FMovies - [Here](https://github.com/UrFingPoor/FmoviesChecker) - No longer Works Will update soon 
 
 ## LICENSE:
 [GNU General Public License v3.0](https://github.com/LethalServices/SearchAPI/blob/main/LICENSE)
