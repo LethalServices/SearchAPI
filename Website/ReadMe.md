@@ -26,12 +26,11 @@
   ## Desktop:
   ![image](https://i.gyazo.com/f746911af7d6428d92686a14b2b9f983.png)
 
-  <div align="center">
   ## Mobile(Non Landscape Mode):
-  ![image](https://i.gyazo.com/ea833bb09f01d988e82cf8842ce5dd3a.png)
+  <div align="center">
+   <img src="https://i.gyazo.com/ea833bb09f01d988e82cf8842ce5dd3a.png" alt="Logo" width="400" height="767">
   </div>
   
-
   ## Demo:
   - [Anime](https://lethals.org/watch/anime/)
   - [Movies/TVShows](https://lethals.org/watch/movies/)
