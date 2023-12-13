@@ -1,13 +1,17 @@
-import os, socket, random, string
-from api.fmovies import getMovies
-from api.anime import getAnime
-from api.anix import getAnix
+#Basic Libs:
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from colorama import Fore
 from waitress import serve
 from time import sleep
 from sys import platform
+#Custom Libs:
+from api.fmovies import getMovies
+from api.anime import getAnime
+from api.anix import getAnix
+from api.anime import getAnime
+
+import os, socket, random, string
 
 '''
 TODO: 
@@ -80,7 +84,15 @@ def fmovies():
         keyword = request.args.get('search')
         page = request.args.get('page')
         proxy = request.args.get('proxy')
-        return jsonify(getMovies('fmovies.ps', keyword, page, proxy))
+        return jsonify(getMovies('fmoviesz.to', keyword, page, proxy))
+
+@app.route('/api/9anime', methods=['GET'])
+def anime():
+    if request.method == 'GET':
+        keyword = request.args.get('search')
+        page = request.args.get('page')
+        proxy = request.args.get('proxy')
+        return jsonify(getAnime('aniwave.to', keyword, page, proxy))
 
 @app.route('/api/anihd', methods=['GET'])
 def anihd():
