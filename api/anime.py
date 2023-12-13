@@ -29,8 +29,7 @@ def getAnime(host, query, page, proxie):
 
     for item in items:
         try:
-            a = item.find('a')
-            href = a.get('href')
+            href = item.find('a').get('href')
             link = f'https://{host}{href}'
             Title = item.find('a', class_="name d-title").text
             img = item.find('img')
