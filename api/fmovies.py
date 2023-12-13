@@ -6,10 +6,10 @@ def getMovies(host, query, page, proxie):
     moviesDictionary = {'Results': []}
     proxy = Random_Proxy()
     try:
-        base_url = f'https://{host}/search/{query}'
+        base_url = f'https://{host}/filter?keyword={query}'
 
         if page != None:
-            base_url = f'https://{host}/search/{query}?page={page}'
+            base_url = f'https://{host}/filter?keyword={query}&page={page}'
 
         if proxie == 'true':
             currentPage = page or '1'
@@ -25,29 +25,23 @@ def getMovies(host, query, page, proxie):
         return moviesDictionary
 
     moviesDictionary['Current_Page'] = currentPage 
-    items = soup.find_all('div', class_='flw-item')
+    items = soup.find_all('div', class_='item')
 
     for item in items:
         try:
-            info = item.find('div', 'film-poster')
-            a = info.find('a')
-            href = a.get('href')
-            link = f'https://{host}{href}'
-            quality = item.find('div', class_="pick film-poster-quality").text
-            
-            img = info.find('img')
+            quality = item.find('div', class_="quality").text
+            pclass = item.find('div', class_='poster')
+            href = pclass.find('a').get('href')
+            link = f'https://{host}{href}'       
+            img = item.find('img')
             poster = img['data-src']
-            TitleBR = item.find('h2', class_="film-name").text
-            Title = TitleBR.replace('\n', '')
-       
-            year =  item.find('span', class_="fdi-item").text
-            duration = item.find('span', class_="fdi-item fdi-duration").text
-            ctype = item.find('span', class_="float-right fdi-type").text
-            
+            meta = item.find('div', class_="meta")
+            Title = meta.find('a').text
+            Type = item.find('span', class_="type").text
         except Exception:
-            pass 
+            link = str(e) 
        
-        moviesObject = {'Quality': quality, 'link': link, 'Cover': poster, 'Title': Title, 'Year': year, 'Duration': duration, 'Type': ctype}
+        moviesObject = {'link': link, "Title": Title, 'Quality': quality, 'Cover': poster, "Content-Type": Type} # 'Quality': quality, 'Cover': poster  'Year': year, 'Duration': duration, 'Type': ctype}
         moviesDictionary['Last_Page'] = getPages(soup, query)
         moviesDictionary['Results'].append(moviesObject)
    
@@ -55,7 +49,7 @@ def getMovies(host, query, page, proxie):
 
 def getPages(soup, query):
     try:
-        ul = soup.find('ul', class_='pagination pagination-lg justify-content-center')
+        ul = soup.find('ul', class_='pagination')
         li = ul.find_all('li')
     except:
         pages = '1'
