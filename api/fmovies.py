@@ -41,7 +41,7 @@ def getMovies(host, query, page, proxie):
         except Exception:
             link = str(e) 
        
-        moviesObject = {'link': link, "Title": Title, 'Quality': quality, 'Cover': poster, "Content-Type": Type} # 'Quality': quality, 'Cover': poster  'Year': year, 'Duration': duration, 'Type': ctype}
+        moviesObject = {'link': link, "Title": Title, 'Quality': quality, 'Cover': poster, "Content-Type": Type} 
         moviesDictionary['Last_Page'] = getPages(soup, query)
         moviesDictionary['Results'].append(moviesObject)
    
