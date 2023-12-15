@@ -7,7 +7,7 @@ from time import sleep
 from sys import platform
 
 #Custom Libs:
-from api.fmovies import getMovies
+from api.fmovies import getMovies, getTrending
 from api.anime import getAnime
 
 import os, socket, random, string
@@ -91,6 +91,13 @@ def fmovies():
         page = request.args.get('page')
         proxy = request.args.get('proxy')
         return jsonify(getMovies('fmoviesz.to', keyword, page, proxy))
+
+@app.route('/api/fmovies/trending', methods=['GET'])
+def fmtrending():
+    if request.method == 'GET':
+        page = request.args.get('page')
+        proxy = request.args.get('proxy')
+        return jsonify(getTrending('fmoviesz.to', page, proxy))   
     
 @app.route('/api/9anime', methods=['GET'])
 def anime():
